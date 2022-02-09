@@ -7,8 +7,8 @@
 - [X] Break down the app in smaller tasks.
 
 ## Task 2: Create the database
-- [ ] Create the database model.
-- [ ] Implement database in SQLite.
+- [X] Create the database model.
+- [X] Migrate database with its restrictions
 
 ## Task 3: Implement the Contacts registration
 - [ ] Implement the database access.
