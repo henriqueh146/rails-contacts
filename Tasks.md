@@ -13,8 +13,9 @@
 - [X] Write the migration to change the Telephone table in order to pass the columns 'main' and 'kind' to the contacts_telephones join table.
 
 ## Task 3: Implement Validations
-- [ ] Implement the contacts uniqueness for an user.
-- [ ] Implement the telephone uniqueness for a contact.
+- [X] Implement the user name uniqueness
+- [X] Implement the contacts uniqueness for an user.
+- [X] Implement the telephone uniqueness for a contact.
 - [ ] Implement the unique main telephone.
 
 ## Task 4: Implement the Test Cases related to data access
