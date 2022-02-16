@@ -1,0 +1,30 @@
+body {
+  font-family: Montserrat;
+  background-color: rgb(238, 238, 238);
+}
+
+.title-page {
+  margin: 50px;
+}
+
+.users-list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.users-list table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.users-list td, th {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.users-list tr:nth-child(even) {
+  background-color: rgb(200, 200, 200);
+}
