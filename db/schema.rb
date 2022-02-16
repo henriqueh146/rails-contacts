@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_09_183736) do
+ActiveRecord::Schema.define(version: 2022_02_10_134512) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -24,11 +24,13 @@ ActiveRecord::Schema.define(version: 2022_02_09_183736) do
     t.integer "telephone_id", null: false
     t.integer "kind"
     t.boolean "main"
+    t.index ["contact_id", "telephone_id"], name: "index_contacts_telephones_on_contact_id_and_telephone_id", unique: true
   end
 
   create_table "contacts_users", id: false, force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "contact_id", null: false
+    t.index ["user_id", "contact_id"], name: "index_contacts_users_on_user_id_and_contact_id", unique: true
   end
 
   create_table "telephones", force: :cascade do |t|

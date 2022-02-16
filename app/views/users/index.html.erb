@@ -1,0 +1,22 @@
+<head>
+  <%= stylesheet_link_tag 'main' %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+</head>
+<body>
+  <h1 class = "title-page">User Listing</h1>
+
+  <div class = "users-list">
+    <table>
+      <tr>
+        <th>Name</th> <th>Age</th> <th>Biography</th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.age %></td>
+          <td><%= user.biography %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</body>
